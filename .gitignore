@@ -1,0 +1,50 @@
+nimcache/
+
+# Executables shall be put in an ignored build/ directory
+build/
+
+# Nimble packages
+/vendor/.nimble
+
+# ntags/ctags output
+/tags
+
+# vscode
+.vscode
+
+# Each developer can create a personal .env file with
+# local settings overrides (e.g. WEB3_URL)
+.env
+
+# Ignore dynamic, static libs and libtool archive files
+*.so
+*.dylib
+*.a
+*.la
+*.exe
+*.dll
+
+/scripts/testnet*.sh
+
+# State sim # TODO - move in another folder
+0000-*.json
+*.ssz
+*.log
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+/local_testnet_data*/
+/local_testnet*_data*/
+
+# Prometheus db
+/data
+# Grafana dashboards
+/docker/*.json
+
+# generated during Nim compilation
+*.nim.generated.nim
+
+/dist
+/benchmark_results
+/.update.timestamp
